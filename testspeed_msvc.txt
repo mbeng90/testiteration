@@ -1,0 +1,80 @@
+"MSVC with /Od"
+	testiteration_msvc_Od.exe
+Vector index: 
+Duration: 3092 ms  (sum = -1797893)
+Vector at: 
+Duration: 3807 ms  (sum = -1797893)
+Vector iterator: 
+Duration: 4690 ms  (sum = -1797893)
+Vector range for loop: 
+Duration: 1643 ms  (sum = -1797893)
+Array index: 
+Duration: 1399 ms  (sum = -1797893)
+Array pointer: 
+Duration: 1518 ms  (sum = -1797893)
+Vector std::accumulate(): 
+Duration: 2292 ms  (sum = -1797893)
+"MSVC with /O1"
+	testiteration_msvc_O1.exe
+Vector index: 
+Duration: 3093 ms  (sum = 2055364)
+Vector at: 
+Duration: 3808 ms  (sum = 2055364)
+Vector iterator: 
+Duration: 4699 ms  (sum = 2055364)
+Vector range for loop: 
+Duration: 1649 ms  (sum = 2055364)
+Array index: 
+Duration: 1400 ms  (sum = 2055364)
+Array pointer: 
+Duration: 1518 ms  (sum = 2055364)
+Vector std::accumulate(): 
+Duration: 2294 ms  (sum = 2055364)
+"MSVC with /O2"
+	testiteration_msvc_O2.exe
+Vector index: 
+Duration: 145 ms  (sum = -4292241)
+Vector at: 
+Duration: 311 ms  (sum = -4292241)
+Vector iterator: 
+Duration: 148 ms  (sum = -4292241)
+Vector range for loop: 
+Duration: 146 ms  (sum = -4292241)
+Array index: 
+Duration: 147 ms  (sum = -4292241)
+Array pointer: 
+Duration: 146 ms  (sum = -4292241)
+Vector std::accumulate(): 
+Duration: 144 ms  (sum = -4292241)
+"MSVC with /O2 /Ob3"
+	testiteration_msvc_O2_Ob3.exe
+Vector index: 
+Duration: 145 ms  (sum = -410289)
+Vector at: 
+Duration: 306 ms  (sum = -410289)
+Vector iterator: 
+Duration: 147 ms  (sum = -410289)
+Vector range for loop: 
+Duration: 146 ms  (sum = -410289)
+Array index: 
+Duration: 146 ms  (sum = -410289)
+Array pointer: 
+Duration: 148 ms  (sum = -410289)
+Vector std::accumulate(): 
+Duration: 146 ms  (sum = -410289)
+"MSVC with /O2 /Ob3 /arch:avx2"
+	testiteration_msvc_O2_Ob3_avx2.exe
+Vector index: 
+Duration: 146 ms  (sum = 669698)
+Vector at: 
+Duration: 307 ms  (sum = 669698)
+Vector iterator: 
+Duration: 157 ms  (sum = 669698)
+Vector range for loop: 
+Duration: 161 ms  (sum = 669698)
+Array index: 
+Duration: 170 ms  (sum = 669698)
+Array pointer: 
+Duration: 160 ms  (sum = 669698)
+Vector std::accumulate(): 
+Duration: 159 ms  (sum = 669698)
