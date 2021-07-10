@@ -1,0 +1,61 @@
+
+CL = cl /TP /EHsc
+CXXSTD = /std:c++latest 
+WARNFLAGS = /W4 /WX
+GENERATEASM = /FAs
+
+SRC = testiteration.cc
+ASMS = testiteration_msvc_Od.asm testiteration_msvc_O1.asm testiteration_msvc_O2.asm testiteration_msvc_O2_Ob3.asm testiteration_msvc_O2_Ob3_avx2.asm 
+PROGS = testiteration_msvc_Od.exe testiteration_msvc_O1.exe testiteration_msvc_O2.exe testiteration_msvc_O2_Ob3.exe testiteration_msvc_O2_Ob3_avx2.exe 
+
+all: $(PROGS) $(ASMS)
+
+
+testiteration_msvc_Od.asm: $(SRC)
+	$(CL) $(CXXSTD) $(WARNFLAGS) /Od /FAs /Fatestiteration_msvc_Od.asm $(SRC)
+
+testiteration_msvc_Od.exe: $(SRC)
+	$(CL) $(CXXSTD) $(WARNFLAGS) /Od /Fetestiteration_msvc_Od.exe $(SRC)
+
+testiteration_msvc_O1.asm: $(SRC)
+	$(CL) $(CXXSTD) $(WARNFLAGS) /O1 /FAs /Fatestiteration_msvc_O1.asm $(SRC)
+
+testiteration_msvc_O1.exe: $(SRC)
+	$(CL) $(CXXSTD) $(WARNFLAGS) /O1 /Fetestiteration_msvc_O1.exe $(SRC)
+
+testiteration_msvc_O2.asm: $(SRC)
+	$(CL) $(CXXSTD) $(WARNFLAGS) /O2 /FAs /Fatestiteration_msvc_O2.asm $(SRC)
+
+testiteration_msvc_O2.exe: $(SRC)
+	$(CL) $(CXXSTD) $(WARNFLAGS) /O2 /Fetestiteration_msvc_O2.exe $(SRC)
+
+testiteration_msvc_O2_Ob3.asm: $(SRC)
+	$(CL) $(CXXSTD) $(WARNFLAGS) /O2 /Ob3 /FAs /Fatestiteration_msvc_O2_Ob3.asm $(SRC)
+
+testiteration_msvc_O2_Ob3.exe: $(SRC)
+	$(CL) $(CXXSTD) $(WARNFLAGS) /O2 /Ob3 /Fetestiteration_msvc_O2_Ob3.exe $(SRC)
+
+testiteration_msvc_O2_Ob3_avx2.asm: $(SRC)
+	$(CL) $(CXXSTD) $(WARNFLAGS) /O2 /Ob3 /arch:AVX2 /FAs /Fatestiteration_msvc_O2_Ob3_avx2.asm $(SRC)
+
+testiteration_msvc_O2_Ob3_avx2.exe: $(SRC)
+	$(CL) $(CXXSTD) $(WARNFLAGS) /O2 /Ob3 /arch:AVX2 /Fetestiteration_msvc_O2_Ob3_avx2.exe $(SRC)
+
+
+run: $(PROGS)
+	@echo "MSVC with /Od"
+	testiteration_msvc_Od.exe
+	@echo "MSVC with /O1"
+	testiteration_msvc_O1.exe
+	@echo "MSVC with /O2"
+	testiteration_msvc_O2.exe
+	@echo "MSVC with /O2 /Ob3"
+	testiteration_msvc_O2_Ob3.exe
+	@echo "MSVC with /O2 /Ob3 /arch:avx2"
+	testiteration_msvc_O2_Ob3_avx2.exe
+	
+clean: 
+	del $(PROGS)
+
+realclean: clean
+	del $(ASMS)

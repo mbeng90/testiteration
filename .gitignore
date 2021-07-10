@@ -1,0 +1,32 @@
+##### Linux
+*~
+
+# Log Files
+*.log
+
+##### Backup
+*.bak
+*.gho
+*.ori
+*.orig
+*.tmp
+
+##### C++ objects and libs
+*.slo
+*.lo
+*.o
+*.a
+*.la
+*.lai
+*.so
+*.so.*
+*.dll
+*.dylib
+*.obj
+
+##### Assembly output files
+*.asm
+*.S
+
+##### Windows executables
+*.exe
