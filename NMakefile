@@ -43,6 +43,9 @@ testiteration_msvc_O2_Ob3_avx2.exe: $(SRC)
 
 
 run: $(PROGS)
+	@echo "Versions"
+	ver
+	-$(CL)
 	@echo "MSVC with /Od"
 	testiteration_msvc_Od.exe
 	@echo "MSVC with /O1"

@@ -1,80 +1,103 @@
-"MSVC with /Od"
+
+Microsoft (R) Program Maintenance Utility Version 14.30.30706.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+Versions
+	ver
+
+Microsoft Windows [Version 10.0.19044.1387]
+	cl /TP /EHsc
+Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+cl : Command line error D8003 : missing source filename
+MSVC with /Od
 	testiteration_msvc_Od.exe
 Vector index: 
-Duration: 3092 ms  (sum = -1797893)
+Duration: 3009 ms  (sum = 858822)
 Vector at: 
-Duration: 3807 ms  (sum = -1797893)
+Duration: 3760 ms  (sum = 858822)
 Vector iterator: 
-Duration: 4690 ms  (sum = -1797893)
+Duration: 9025 ms  (sum = 858822)
 Vector range for loop: 
-Duration: 1643 ms  (sum = -1797893)
+Duration: 1643 ms  (sum = 858822)
 Array index: 
-Duration: 1399 ms  (sum = -1797893)
+Duration: 1401 ms  (sum = 858822)
 Array pointer: 
-Duration: 1518 ms  (sum = -1797893)
+Duration: 1521 ms  (sum = 858822)
 Vector std::accumulate(): 
-Duration: 2292 ms  (sum = -1797893)
-"MSVC with /O1"
+Duration: 2240 ms  (sum = 858822)
+Vector std::for_each(): 
+Duration: 1928 ms  (sum = 858822)
+MSVC with /O1
 	testiteration_msvc_O1.exe
 Vector index: 
-Duration: 3093 ms  (sum = 2055364)
+Duration: 286 ms  (sum = -2076093)
 Vector at: 
-Duration: 3808 ms  (sum = 2055364)
+Duration: 459 ms  (sum = -2076093)
 Vector iterator: 
-Duration: 4699 ms  (sum = 2055364)
+Duration: 478 ms  (sum = -2076093)
 Vector range for loop: 
-Duration: 1649 ms  (sum = 2055364)
+Duration: 322 ms  (sum = -2076093)
 Array index: 
-Duration: 1400 ms  (sum = 2055364)
+Duration: 315 ms  (sum = -2076093)
 Array pointer: 
-Duration: 1518 ms  (sum = 2055364)
+Duration: 305 ms  (sum = -2076093)
 Vector std::accumulate(): 
-Duration: 2294 ms  (sum = 2055364)
-"MSVC with /O2"
+Duration: 317 ms  (sum = -2076093)
+Vector std::for_each(): 
+Duration: 312 ms  (sum = -2076093)
+MSVC with /O2
 	testiteration_msvc_O2.exe
 Vector index: 
-Duration: 145 ms  (sum = -4292241)
+Duration: 144 ms  (sum = -472661)
 Vector at: 
-Duration: 311 ms  (sum = -4292241)
+Duration: 308 ms  (sum = -472661)
 Vector iterator: 
-Duration: 148 ms  (sum = -4292241)
+Duration: 296 ms  (sum = -472661)
 Vector range for loop: 
-Duration: 146 ms  (sum = -4292241)
+Duration: 144 ms  (sum = -472661)
 Array index: 
-Duration: 147 ms  (sum = -4292241)
+Duration: 140 ms  (sum = -472661)
 Array pointer: 
-Duration: 146 ms  (sum = -4292241)
+Duration: 143 ms  (sum = -472661)
 Vector std::accumulate(): 
-Duration: 144 ms  (sum = -4292241)
-"MSVC with /O2 /Ob3"
+Duration: 143 ms  (sum = -472661)
+Vector std::for_each(): 
+Duration: 303 ms  (sum = -472661)
+MSVC with /O2 /Ob3
 	testiteration_msvc_O2_Ob3.exe
 Vector index: 
-Duration: 145 ms  (sum = -410289)
+Duration: 140 ms  (sum = 1349957)
 Vector at: 
-Duration: 306 ms  (sum = -410289)
+Duration: 310 ms  (sum = 1349957)
 Vector iterator: 
-Duration: 147 ms  (sum = -410289)
+Duration: 299 ms  (sum = 1349957)
 Vector range for loop: 
-Duration: 146 ms  (sum = -410289)
+Duration: 142 ms  (sum = 1349957)
 Array index: 
-Duration: 146 ms  (sum = -410289)
+Duration: 142 ms  (sum = 1349957)
 Array pointer: 
-Duration: 148 ms  (sum = -410289)
+Duration: 141 ms  (sum = 1349957)
 Vector std::accumulate(): 
-Duration: 146 ms  (sum = -410289)
-"MSVC with /O2 /Ob3 /arch:avx2"
+Duration: 143 ms  (sum = 1349957)
+Vector std::for_each(): 
+Duration: 304 ms  (sum = 1349957)
+MSVC with /O2 /Ob3 /arch:avx2
 	testiteration_msvc_O2_Ob3_avx2.exe
 Vector index: 
-Duration: 146 ms  (sum = 669698)
+Duration: 144 ms  (sum = 49468)
 Vector at: 
-Duration: 307 ms  (sum = 669698)
+Duration: 314 ms  (sum = 49468)
 Vector iterator: 
-Duration: 157 ms  (sum = 669698)
+Duration: 306 ms  (sum = 49468)
 Vector range for loop: 
-Duration: 161 ms  (sum = 669698)
+Duration: 147 ms  (sum = 49468)
 Array index: 
-Duration: 170 ms  (sum = 669698)
+Duration: 147 ms  (sum = 49468)
 Array pointer: 
-Duration: 160 ms  (sum = 669698)
+Duration: 157 ms  (sum = 49468)
 Vector std::accumulate(): 
-Duration: 159 ms  (sum = 669698)
+Duration: 144 ms  (sum = 49468)
+Vector std::for_each(): 
+Duration: 315 ms  (sum = 49468)
