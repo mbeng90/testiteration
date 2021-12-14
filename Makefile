@@ -78,6 +78,10 @@ testiteration_clang_O3_haswell: $(SRC)
 
 .PHONY: run
 run: $(PROGS)
+	@echo "Versions"
+	cat /etc/fedora-release
+	$(GXX) --version
+	$(CLANGXX) --version
 	@echo "G++ with -Og"
 	./testiteration_gcc_Og
 	@echo "G++ with -O1"
