@@ -1,53 +1,73 @@
 
 CL = cl /TP /EHsc
-CXXSTD = /std:c++latest 
-WARNFLAGS = /W4 /WX
-GENERATEASM = /FAs
+MSVC_CXXSTD = /std:c++latest 
+MSVC_WARNFLAGS = /W4 /WX
+
+BCC = bcc64
+BCC_CXXSTD = -std=c++17
+BCC_WARNFLAGS = -Wall -Wextra -Werror
 
 SRC = testiteration.cc
-ASMS = testiteration_msvc_Od.asm testiteration_msvc_O1.asm testiteration_msvc_O2.asm testiteration_msvc_O2_Ob3.asm testiteration_msvc_O2_Ob3_avx2.asm 
-PROGS = testiteration_msvc_Od.exe testiteration_msvc_O1.exe testiteration_msvc_O2.exe testiteration_msvc_O2_Ob3.exe testiteration_msvc_O2_Ob3_avx2.exe 
+ASMS = testiteration_msvc_Os.asm testiteration_msvc_O1.asm testiteration_msvc_O2.asm testiteration_msvc_O2_Ob3.asm testiteration_msvc_O2_Ob3_avx2.asm 
+PROGS = testiteration_msvc_Os.exe testiteration_msvc_O1.exe testiteration_msvc_O2.exe testiteration_msvc_O2_Ob3.exe testiteration_msvc_O2_Ob3_avx2.exe\
+        testiteration_bcc_Og.exe testiteration_bcc_O1.exe testiteration_bcc_O2.exe testiteration_bcc_O3.exe testiteration_bcc_O3_haswell.exe 
 
-all: $(PROGS) $(ASMS)
+all: $(PROGS) # $(ASMS)
 
 
-testiteration_msvc_Od.asm: $(SRC)
-	$(CL) $(CXXSTD) $(WARNFLAGS) /Od /FAs /Fatestiteration_msvc_Od.asm $(SRC)
+testiteration_msvc_Os.asm: $(SRC)
+	$(CL) $(MSVC_CXXSTD) $(MSVC_WARNFLAGS) /Os /FAs /Fatestiteration_msvc_Os.asm $(SRC)
 
-testiteration_msvc_Od.exe: $(SRC)
-	$(CL) $(CXXSTD) $(WARNFLAGS) /Od /Fetestiteration_msvc_Od.exe $(SRC)
+testiteration_msvc_Os.exe: $(SRC)
+	$(CL) $(MSVC_CXXSTD) $(MSVC_WARNFLAGS) /Os /Fetestiteration_msvc_Os.exe $(SRC)
 
 testiteration_msvc_O1.asm: $(SRC)
-	$(CL) $(CXXSTD) $(WARNFLAGS) /O1 /FAs /Fatestiteration_msvc_O1.asm $(SRC)
+	$(CL) $(MSVC_CXXSTD) $(MSVC_WARNFLAGS) /O1 /FAs /Fatestiteration_msvc_O1.asm $(SRC)
 
 testiteration_msvc_O1.exe: $(SRC)
-	$(CL) $(CXXSTD) $(WARNFLAGS) /O1 /Fetestiteration_msvc_O1.exe $(SRC)
+	$(CL) $(MSVC_CXXSTD) $(MSVC_WARNFLAGS) /O1 /Fetestiteration_msvc_O1.exe $(SRC)
 
 testiteration_msvc_O2.asm: $(SRC)
-	$(CL) $(CXXSTD) $(WARNFLAGS) /O2 /FAs /Fatestiteration_msvc_O2.asm $(SRC)
+	$(CL) $(MSVC_CXXSTD) $(MSVC_WARNFLAGS) /O2 /FAs /Fatestiteration_msvc_O2.asm $(SRC)
 
 testiteration_msvc_O2.exe: $(SRC)
-	$(CL) $(CXXSTD) $(WARNFLAGS) /O2 /Fetestiteration_msvc_O2.exe $(SRC)
+	$(CL) $(MSVC_CXXSTD) $(MSVC_WARNFLAGS) /O2 /Fetestiteration_msvc_O2.exe $(SRC)
 
 testiteration_msvc_O2_Ob3.asm: $(SRC)
-	$(CL) $(CXXSTD) $(WARNFLAGS) /O2 /Ob3 /FAs /Fatestiteration_msvc_O2_Ob3.asm $(SRC)
+	$(CL) $(MSVC_CXXSTD) $(MSVC_WARNFLAGS) /O2 /Ob3 /favor:INTEL64 /FAs /Fatestiteration_msvc_O2_Ob3.asm $(SRC)
 
 testiteration_msvc_O2_Ob3.exe: $(SRC)
-	$(CL) $(CXXSTD) $(WARNFLAGS) /O2 /Ob3 /Fetestiteration_msvc_O2_Ob3.exe $(SRC)
+	$(CL) $(MSVC_CXXSTD) $(MSVC_WARNFLAGS) /O2 /Ob3 /favor:INTEL64 /Fetestiteration_msvc_O2_Ob3.exe $(SRC)
 
 testiteration_msvc_O2_Ob3_avx2.asm: $(SRC)
-	$(CL) $(CXXSTD) $(WARNFLAGS) /O2 /Ob3 /arch:AVX2 /FAs /Fatestiteration_msvc_O2_Ob3_avx2.asm $(SRC)
+	$(CL) $(MSVC_CXXSTD) $(MSVC_WARNFLAGS) /O2 /Ob3 /favor:INTEL64 /arch:AVX2 /FAs /Fatestiteration_msvc_O2_Ob3_avx2.asm $(SRC)
 
 testiteration_msvc_O2_Ob3_avx2.exe: $(SRC)
-	$(CL) $(CXXSTD) $(WARNFLAGS) /O2 /Ob3 /arch:AVX2 /Fetestiteration_msvc_O2_Ob3_avx2.exe $(SRC)
+	$(CL) $(MSVC_CXXSTD) $(MSVC_WARNFLAGS) /O2 /Ob3 /favor:INTEL64 /arch:AVX2 /Fetestiteration_msvc_O2_Ob3_avx2.exe $(SRC)
 
+
+
+testiteration_bcc_Og.exe: $(SRC)
+	$(BCC) $(BCC_CXXSTD) $(BCC_WARNFLAGS) -Og -o testiteration_bcc_Og.exe $(SRC)
+
+testiteration_bcc_O1.exe: $(SRC)
+	$(BCC) $(BCC_CXXSTD) $(BCC_WARNFLAGS) -O1 -o testiteration_bcc_O1.exe $(SRC)
+
+testiteration_bcc_O2.exe: $(SRC)
+	$(BCC) $(BCC_CXXSTD) $(BCC_WARNFLAGS) -O2 -o testiteration_bcc_O2.exe $(SRC)
+
+testiteration_bcc_O3.exe: $(SRC)
+	$(BCC) $(BCC_CXXSTD) $(BCC_WARNFLAGS) -O3 -o testiteration_bcc_O3.exe $(SRC)
+
+testiteration_bcc_O3_haswell.exe: $(SRC)
+	$(BCC) $(BCC_CXXSTD) $(BCC_WARNFLAGS) -O3 -march=haswell -o testiteration_bcc_O3_haswell.exe $(SRC)
 
 run: $(PROGS)
 	@echo "Versions"
 	ver
 	-$(CL)
-	@echo "MSVC with /Od"
-	testiteration_msvc_Od.exe
+	@echo "MSVC with /Os"
+	testiteration_msvc_Os.exe
 	@echo "MSVC with /O1"
 	testiteration_msvc_O1.exe
 	@echo "MSVC with /O2"
@@ -56,6 +76,16 @@ run: $(PROGS)
 	testiteration_msvc_O2_Ob3.exe
 	@echo "MSVC with /O2 /Ob3 /arch:avx2"
 	testiteration_msvc_O2_Ob3_avx2.exe
+	@echo "BCC64 with -Og"
+	testiteration_bcc_Og.exe
+	@echo "BCC64 with -O1"
+	testiteration_bcc_O1.exe
+	@echo "BCC64 with -O2"
+	testiteration_bcc_O2.exe
+	@echo "BCC64 with -O3"
+	testiteration_bcc_O3.exe
+	@echo "BCC64 with -O3 -march=haswell"
+	testiteration_bcc_O3_haswell.exe
 	
 clean: 
 	del $(PROGS)
