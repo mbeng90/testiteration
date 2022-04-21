@@ -6,4 +6,4 @@ It does this in several different ways and measures the time
 it takes using the different methods.
 
 The program is built using several different optimization flags
-and different compilers (gcc and clang on Linux, MSVC on Windows).
+and different compilers (gcc and clang on Linux, MSVC and bcc64 on Windows).
