@@ -1,7 +1,7 @@
 
 GXX = g++
 CLANGXX = clang++
-CXXSTD = -std=c++2a 
+CXXSTD = -std=c++20
 OPTDBG = -O3 -march=haswell #-march=skylake
 WARNFLAGS = -Wall -Wextra -Werror
 GENERATEASM = -S -fverbose-asm -masm=intel

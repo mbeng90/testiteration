@@ -4,6 +4,7 @@
 #include <chrono>
 #include <random>
 #include <numeric>
+#include <algorithm>
 
 std::vector<int>
 genLargeVector() {
