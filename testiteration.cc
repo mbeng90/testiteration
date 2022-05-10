@@ -98,7 +98,6 @@ sum_vector_stdaccumulate(const std::vector<int>& v) {
     return std::accumulate(std::begin(v), std::end(v), 0);
 }
 
-#if !defined(__BCPLUSPLUS__)
 static inline
 int
 sum_vector_stdforeach(const std::vector<int>& v) {
@@ -106,7 +105,6 @@ sum_vector_stdforeach(const std::vector<int>& v) {
     std::for_each(std::begin(v), std::end(v), [&sum](auto i) { sum += i;});
     return sum;
 }
-#endif 
 
 template <class SumMethod>
 void
@@ -149,10 +147,8 @@ main() {
     std::cout << "Vector std::accumulate(): \n";
     timed_sum(v, sum_vector_stdaccumulate);
 
-#if !defined(__BCPLUSPLUS__)
     std::cout << "Vector std::for_each(): \n";
     timed_sum(v, sum_vector_stdforeach);
-#endif 
 
     return 0;
 }
