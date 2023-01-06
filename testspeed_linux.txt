@@ -1,195 +1,195 @@
 Versions
 cat /etc/fedora-release
-Fedora release 36 (Thirty Six)
+Fedora release 37 (Thirty Seven)
 g++ --version
-g++ (GCC) 12.1.1 20220507 (Red Hat 12.1.1-1)
+g++ (GCC) 12.2.1 20221121 (Red Hat 12.2.1-4)
 Copyright © 2022 Free Software Foundation, Inc.
 Detta är fri programvara, se källkoden för kopieringsvillkor.  Det
 finns INGEN garanti, inte ens för KÖP eller LÄMPLIGHET FÖR NÅGOT
 SPECIELLT ÄNDAMÅL.
 
 clang++ --version
-clang version 14.0.0 (Fedora 14.0.0-1.fc36)
+clang version 15.0.6 (Fedora 15.0.6-3.fc37)
 Target: x86_64-redhat-linux-gnu
 Thread model: posix
 InstalledDir: /usr/bin
 G++ with -Og
 ./testiteration_gcc_Og
 Vector index: 
-Duration: 511 ms  (sum = 749228)
+Duration: 515 ms  (sum = 2163803)
 Vector at: 
-Duration: 1408 ms  (sum = 749228)
+Duration: 1410 ms  (sum = 2163803)
 Vector iterator: 
-Duration: 745 ms  (sum = 749228)
+Duration: 739 ms  (sum = 2163803)
 Vector range for loop: 
-Duration: 351 ms  (sum = 749228)
+Duration: 351 ms  (sum = 2163803)
 Array index: 
-Duration: 349 ms  (sum = 749228)
+Duration: 353 ms  (sum = 2163803)
 Array pointer: 
-Duration: 352 ms  (sum = 749228)
+Duration: 351 ms  (sum = 2163803)
 Vector std::accumulate(): 
-Duration: 352 ms  (sum = 749228)
+Duration: 351 ms  (sum = 2163803)
 Vector std::for_each(): 
-Duration: 1258 ms  (sum = 749228)
+Duration: 1263 ms  (sum = 2163803)
 G++ with -O1
 ./testiteration_gcc_O1
 Vector index: 
-Duration: 350 ms  (sum = 1004502)
+Duration: 352 ms  (sum = 2241414)
 Vector at: 
-Duration: 352 ms  (sum = 1004502)
+Duration: 362 ms  (sum = 2241414)
 Vector iterator: 
-Duration: 352 ms  (sum = 1004502)
+Duration: 364 ms  (sum = 2241414)
 Vector range for loop: 
-Duration: 347 ms  (sum = 1004502)
+Duration: 359 ms  (sum = 2241414)
 Array index: 
-Duration: 351 ms  (sum = 1004502)
+Duration: 364 ms  (sum = 2241414)
 Array pointer: 
-Duration: 351 ms  (sum = 1004502)
+Duration: 363 ms  (sum = 2241414)
 Vector std::accumulate(): 
-Duration: 350 ms  (sum = 1004502)
+Duration: 368 ms  (sum = 2241414)
 Vector std::for_each(): 
-Duration: 355 ms  (sum = 1004502)
+Duration: 356 ms  (sum = 2241414)
 G++ with -O2
 ./testiteration_gcc_O2
 Vector index: 
-Duration: 365 ms  (sum = -1400882)
+Duration: 370 ms  (sum = -3412206)
 Vector at: 
-Duration: 371 ms  (sum = -1400882)
+Duration: 365 ms  (sum = -3412206)
 Vector iterator: 
-Duration: 363 ms  (sum = -1400882)
+Duration: 355 ms  (sum = -3412206)
 Vector range for loop: 
-Duration: 356 ms  (sum = -1400882)
+Duration: 358 ms  (sum = -3412206)
 Array index: 
-Duration: 361 ms  (sum = -1400882)
+Duration: 362 ms  (sum = -3412206)
 Array pointer: 
-Duration: 358 ms  (sum = -1400882)
+Duration: 363 ms  (sum = -3412206)
 Vector std::accumulate(): 
-Duration: 366 ms  (sum = -1400882)
+Duration: 365 ms  (sum = -3412206)
 Vector std::for_each(): 
-Duration: 363 ms  (sum = -1400882)
+Duration: 351 ms  (sum = -3412206)
 G++ with -O3
 ./testiteration_gcc_O3
 Vector index: 
-Duration: 167 ms  (sum = -40592)
+Duration: 170 ms  (sum = 402584)
 Vector at: 
-Duration: 167 ms  (sum = -40592)
+Duration: 167 ms  (sum = 402584)
 Vector iterator: 
-Duration: 166 ms  (sum = -40592)
+Duration: 166 ms  (sum = 402584)
 Vector range for loop: 
-Duration: 166 ms  (sum = -40592)
+Duration: 171 ms  (sum = 402584)
 Array index: 
-Duration: 166 ms  (sum = -40592)
+Duration: 169 ms  (sum = 402584)
 Array pointer: 
-Duration: 166 ms  (sum = -40592)
+Duration: 166 ms  (sum = 402584)
 Vector std::accumulate(): 
-Duration: 167 ms  (sum = -40592)
+Duration: 169 ms  (sum = 402584)
 Vector std::for_each(): 
-Duration: 165 ms  (sum = -40592)
+Duration: 171 ms  (sum = 402584)
 G++ with -O3 -march=haswell
 ./testiteration_gcc_O3_haswell
 Vector index: 
-Duration: 145 ms  (sum = -622817)
+Duration: 147 ms  (sum = 342642)
 Vector at: 
-Duration: 162 ms  (sum = -622817)
+Duration: 146 ms  (sum = 342642)
 Vector iterator: 
-Duration: 146 ms  (sum = -622817)
+Duration: 148 ms  (sum = 342642)
 Vector range for loop: 
-Duration: 144 ms  (sum = -622817)
+Duration: 145 ms  (sum = 342642)
 Array index: 
-Duration: 146 ms  (sum = -622817)
+Duration: 145 ms  (sum = 342642)
 Array pointer: 
-Duration: 151 ms  (sum = -622817)
+Duration: 146 ms  (sum = 342642)
 Vector std::accumulate(): 
-Duration: 150 ms  (sum = -622817)
+Duration: 146 ms  (sum = 342642)
 Vector std::for_each(): 
-Duration: 148 ms  (sum = -622817)
+Duration: 145 ms  (sum = 342642)
 Clang++ with -Og
 ./testiteration_clang_Og
 Vector index: 
-Duration: 347 ms  (sum = 2587230)
+Duration: 367 ms  (sum = -1278359)
 Vector at: 
-Duration: 358 ms  (sum = 2587230)
+Duration: 363 ms  (sum = -1278359)
 Vector iterator: 
-Duration: 361 ms  (sum = 2587230)
+Duration: 363 ms  (sum = -1278359)
 Vector range for loop: 
-Duration: 346 ms  (sum = 2587230)
+Duration: 359 ms  (sum = -1278359)
 Array index: 
-Duration: 362 ms  (sum = 2587230)
+Duration: 353 ms  (sum = -1278359)
 Array pointer: 
-Duration: 379 ms  (sum = 2587230)
+Duration: 354 ms  (sum = -1278359)
 Vector std::accumulate(): 
-Duration: 364 ms  (sum = 2587230)
+Duration: 359 ms  (sum = -1278359)
 Vector std::for_each(): 
-Duration: 360 ms  (sum = 2587230)
+Duration: 362 ms  (sum = -1278359)
 Clang++ with -O1
 ./testiteration_clang_O1
 Vector index: 
-Duration: 370 ms  (sum = -2250460)
+Duration: 365 ms  (sum = -2310073)
 Vector at: 
-Duration: 356 ms  (sum = -2250460)
+Duration: 360 ms  (sum = -2310073)
 Vector iterator: 
-Duration: 364 ms  (sum = -2250460)
+Duration: 363 ms  (sum = -2310073)
 Vector range for loop: 
-Duration: 377 ms  (sum = -2250460)
+Duration: 366 ms  (sum = -2310073)
 Array index: 
-Duration: 361 ms  (sum = -2250460)
+Duration: 357 ms  (sum = -2310073)
 Array pointer: 
-Duration: 353 ms  (sum = -2250460)
+Duration: 353 ms  (sum = -2310073)
 Vector std::accumulate(): 
-Duration: 360 ms  (sum = -2250460)
+Duration: 366 ms  (sum = -2310073)
 Vector std::for_each(): 
-Duration: 352 ms  (sum = -2250460)
+Duration: 352 ms  (sum = -2310073)
 Clang++ with -O2
 ./testiteration_clang_O2
 Vector index: 
-Duration: 159 ms  (sum = 1358163)
+Duration: 162 ms  (sum = 2776396)
 Vector at: 
-Duration: 161 ms  (sum = 1358163)
+Duration: 161 ms  (sum = 2776396)
 Vector iterator: 
-Duration: 163 ms  (sum = 1358163)
+Duration: 161 ms  (sum = 2776396)
 Vector range for loop: 
-Duration: 162 ms  (sum = 1358163)
+Duration: 158 ms  (sum = 2776396)
 Array index: 
-Duration: 162 ms  (sum = 1358163)
+Duration: 174 ms  (sum = 2776396)
 Array pointer: 
-Duration: 165 ms  (sum = 1358163)
+Duration: 160 ms  (sum = 2776396)
 Vector std::accumulate(): 
-Duration: 160 ms  (sum = 1358163)
+Duration: 160 ms  (sum = 2776396)
 Vector std::for_each(): 
-Duration: 160 ms  (sum = 1358163)
+Duration: 166 ms  (sum = 2776396)
 Clang++ with -O3
 ./testiteration_clang_O3
 Vector index: 
-Duration: 160 ms  (sum = -300348)
+Duration: 162 ms  (sum = -1809426)
 Vector at: 
-Duration: 161 ms  (sum = -300348)
+Duration: 161 ms  (sum = -1809426)
 Vector iterator: 
-Duration: 162 ms  (sum = -300348)
+Duration: 163 ms  (sum = -1809426)
 Vector range for loop: 
-Duration: 162 ms  (sum = -300348)
+Duration: 163 ms  (sum = -1809426)
 Array index: 
-Duration: 159 ms  (sum = -300348)
+Duration: 210 ms  (sum = -1809426)
 Array pointer: 
-Duration: 160 ms  (sum = -300348)
+Duration: 164 ms  (sum = -1809426)
 Vector std::accumulate(): 
-Duration: 159 ms  (sum = -300348)
+Duration: 168 ms  (sum = -1809426)
 Vector std::for_each(): 
-Duration: 158 ms  (sum = -300348)
+Duration: 161 ms  (sum = -1809426)
 Clang++ with -O3 -march=haswell
 ./testiteration_clang_O3_haswell
 Vector index: 
-Duration: 142 ms  (sum = -973647)
+Duration: 160 ms  (sum = 2232408)
 Vector at: 
-Duration: 146 ms  (sum = -973647)
+Duration: 165 ms  (sum = 2232408)
 Vector iterator: 
-Duration: 146 ms  (sum = -973647)
+Duration: 151 ms  (sum = 2232408)
 Vector range for loop: 
-Duration: 145 ms  (sum = -973647)
+Duration: 152 ms  (sum = 2232408)
 Array index: 
-Duration: 148 ms  (sum = -973647)
+Duration: 151 ms  (sum = 2232408)
 Array pointer: 
-Duration: 143 ms  (sum = -973647)
+Duration: 151 ms  (sum = 2232408)
 Vector std::accumulate(): 
-Duration: 158 ms  (sum = -973647)
+Duration: 167 ms  (sum = 2232408)
 Vector std::for_each(): 
-Duration: 151 ms  (sum = -973647)
+Duration: 152 ms  (sum = 2232408)
