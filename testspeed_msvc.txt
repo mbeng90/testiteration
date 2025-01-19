@@ -1,185 +1,185 @@
 Versions
 	ver
 
-Microsoft Windows [Version 10.0.22621.963]
+Microsoft Windows [Version 10.0.22631.3447]
 	cl /TP /EHsc
 MSVC with /Os
 	testiteration_msvc_Os.exe
 Vector index: 
-Duration: 3298 ms  (sum = -3169851)
+Duration: 3286 ms  (sum = -823884)
 Vector at: 
-Duration: 3988 ms  (sum = -3169851)
+Duration: 4068 ms  (sum = -823884)
 Vector iterator: 
-Duration: 10945 ms  (sum = -3169851)
+Duration: 10814 ms  (sum = -823884)
 Vector range for loop: 
-Duration: 1738 ms  (sum = -3169851)
+Duration: 1821 ms  (sum = -823884)
 Array index: 
-Duration: 1502 ms  (sum = -3169851)
+Duration: 1602 ms  (sum = -823884)
 Array pointer: 
-Duration: 1611 ms  (sum = -3169851)
+Duration: 1697 ms  (sum = -823884)
 Vector std::accumulate(): 
-Duration: 2626 ms  (sum = -3169851)
+Duration: 2695 ms  (sum = -823884)
 Vector std::for_each(): 
-Duration: 2065 ms  (sum = -3169851)
+Duration: 2125 ms  (sum = -823884)
 MSVC with /O1
 	testiteration_msvc_O1.exe
 Vector index: 
-Duration: 356 ms  (sum = 1739019)
+Duration: 416 ms  (sum = -1208623)
 Vector at: 
-Duration: 537 ms  (sum = 1739019)
+Duration: 557 ms  (sum = -1208623)
 Vector iterator: 
-Duration: 358 ms  (sum = 1739019)
+Duration: 368 ms  (sum = -1208623)
 Vector range for loop: 
-Duration: 565 ms  (sum = 1739019)
+Duration: 521 ms  (sum = -1208623)
 Array index: 
-Duration: 388 ms  (sum = 1739019)
+Duration: 369 ms  (sum = -1208623)
 Array pointer: 
-Duration: 388 ms  (sum = 1739019)
+Duration: 373 ms  (sum = -1208623)
 Vector std::accumulate(): 
-Duration: 544 ms  (sum = 1739019)
+Duration: 519 ms  (sum = -1208623)
 Vector std::for_each(): 
-Duration: 534 ms  (sum = 1739019)
+Duration: 518 ms  (sum = -1208623)
 MSVC with /O2
 	testiteration_msvc_O2.exe
 Vector index: 
-Duration: 176 ms  (sum = -751017)
+Duration: 167 ms  (sum = -2525841)
 Vector at: 
-Duration: 380 ms  (sum = -751017)
+Duration: 370 ms  (sum = -2525841)
 Vector iterator: 
-Duration: 371 ms  (sum = -751017)
+Duration: 353 ms  (sum = -2525841)
 Vector range for loop: 
-Duration: 183 ms  (sum = -751017)
+Duration: 167 ms  (sum = -2525841)
 Array index: 
-Duration: 179 ms  (sum = -751017)
+Duration: 165 ms  (sum = -2525841)
 Array pointer: 
-Duration: 180 ms  (sum = -751017)
+Duration: 168 ms  (sum = -2525841)
 Vector std::accumulate(): 
-Duration: 181 ms  (sum = -751017)
+Duration: 167 ms  (sum = -2525841)
 Vector std::for_each(): 
-Duration: 383 ms  (sum = -751017)
+Duration: 368 ms  (sum = -2525841)
 MSVC with /O2 /Ob3
 	testiteration_msvc_O2_Ob3.exe
 Vector index: 
-Duration: 185 ms  (sum = -496427)
+Duration: 166 ms  (sum = 460006)
 Vector at: 
-Duration: 383 ms  (sum = -496427)
+Duration: 370 ms  (sum = 460006)
 Vector iterator: 
-Duration: 371 ms  (sum = -496427)
+Duration: 354 ms  (sum = 460006)
 Vector range for loop: 
-Duration: 202 ms  (sum = -496427)
+Duration: 170 ms  (sum = 460006)
 Array index: 
-Duration: 183 ms  (sum = -496427)
+Duration: 167 ms  (sum = 460006)
 Array pointer: 
-Duration: 190 ms  (sum = -496427)
+Duration: 170 ms  (sum = 460006)
 Vector std::accumulate(): 
-Duration: 183 ms  (sum = -496427)
+Duration: 178 ms  (sum = 460006)
 Vector std::for_each(): 
-Duration: 370 ms  (sum = -496427)
+Duration: 377 ms  (sum = 460006)
 MSVC with /O2 /Ob3 /arch:avx2
 	testiteration_msvc_O2_Ob3_avx2.exe
 Vector index: 
-Duration: 166 ms  (sum = 55932)
+Duration: 156 ms  (sum = -518395)
 Vector at: 
-Duration: 382 ms  (sum = 55932)
+Duration: 370 ms  (sum = -518395)
 Vector iterator: 
-Duration: 363 ms  (sum = 55932)
+Duration: 354 ms  (sum = -518395)
 Vector range for loop: 
-Duration: 166 ms  (sum = 55932)
+Duration: 155 ms  (sum = -518395)
 Array index: 
-Duration: 159 ms  (sum = 55932)
+Duration: 155 ms  (sum = -518395)
 Array pointer: 
-Duration: 159 ms  (sum = 55932)
+Duration: 158 ms  (sum = -518395)
 Vector std::accumulate(): 
-Duration: 157 ms  (sum = 55932)
+Duration: 156 ms  (sum = -518395)
 Vector std::for_each(): 
-Duration: 372 ms  (sum = 55932)
+Duration: 369 ms  (sum = -518395)
 BCC64 with -Og
 	testiteration_bcc_Og.exe
 Vector index: 
-Duration: 9227 ms  (sum = -59256)
+Duration: 9154 ms  (sum = -59256)
 Vector at: 
-Duration: 15173 ms  (sum = -59256)
+Duration: 15072 ms  (sum = -59256)
 Vector iterator: 
-Duration: 4319 ms  (sum = -59256)
+Duration: 4189 ms  (sum = -59256)
 Vector range for loop: 
-Duration: 6837 ms  (sum = -59256)
+Duration: 6744 ms  (sum = -59256)
 Array index: 
-Duration: 370 ms  (sum = -59256)
+Duration: 359 ms  (sum = -59256)
 Array pointer: 
-Duration: 380 ms  (sum = -59256)
+Duration: 370 ms  (sum = -59256)
 Vector std::accumulate(): 
-Duration: 1393 ms  (sum = -59256)
+Duration: 1390 ms  (sum = -59256)
 Vector std::for_each(): 
-Duration: 1284 ms  (sum = -59256)
+Duration: 1248 ms  (sum = -59256)
 BCC64 with -O1
 	testiteration_bcc_O1.exe
 Vector index: 
-Duration: 9167 ms  (sum = -59256)
+Duration: 9143 ms  (sum = -59256)
 Vector at: 
-Duration: 15037 ms  (sum = -59256)
+Duration: 15149 ms  (sum = -59256)
 Vector iterator: 
-Duration: 4235 ms  (sum = -59256)
+Duration: 4201 ms  (sum = -59256)
 Vector range for loop: 
-Duration: 6792 ms  (sum = -59256)
+Duration: 6781 ms  (sum = -59256)
 Array index: 
-Duration: 364 ms  (sum = -59256)
+Duration: 358 ms  (sum = -59256)
 Array pointer: 
-Duration: 372 ms  (sum = -59256)
+Duration: 369 ms  (sum = -59256)
 Vector std::accumulate(): 
-Duration: 1382 ms  (sum = -59256)
+Duration: 1384 ms  (sum = -59256)
 Vector std::for_each(): 
-Duration: 1340 ms  (sum = -59256)
+Duration: 1251 ms  (sum = -59256)
 BCC64 with -O2
 	testiteration_bcc_O2.exe
 Vector index: 
-Duration: 181 ms  (sum = -59256)
+Duration: 164 ms  (sum = -59256)
 Vector at: 
-Duration: 211 ms  (sum = -59256)
+Duration: 164 ms  (sum = -59256)
 Vector iterator: 
-Duration: 166 ms  (sum = -59256)
+Duration: 168 ms  (sum = -59256)
 Vector range for loop: 
-Duration: 164 ms  (sum = -59256)
-Array index: 
 Duration: 166 ms  (sum = -59256)
+Array index: 
+Duration: 176 ms  (sum = -59256)
 Array pointer: 
-Duration: 164 ms  (sum = -59256)
+Duration: 167 ms  (sum = -59256)
 Vector std::accumulate(): 
-Duration: 188 ms  (sum = -59256)
+Duration: 168 ms  (sum = -59256)
 Vector std::for_each(): 
-Duration: 177 ms  (sum = -59256)
+Duration: 167 ms  (sum = -59256)
 BCC64 with -O3
 	testiteration_bcc_O3.exe
 Vector index: 
-Duration: 171 ms  (sum = -59256)
+Duration: 168 ms  (sum = -59256)
 Vector at: 
-Duration: 169 ms  (sum = -59256)
+Duration: 173 ms  (sum = -59256)
 Vector iterator: 
 Duration: 170 ms  (sum = -59256)
 Vector range for loop: 
-Duration: 168 ms  (sum = -59256)
+Duration: 166 ms  (sum = -59256)
 Array index: 
-Duration: 170 ms  (sum = -59256)
+Duration: 167 ms  (sum = -59256)
 Array pointer: 
-Duration: 169 ms  (sum = -59256)
+Duration: 166 ms  (sum = -59256)
 Vector std::accumulate(): 
-Duration: 184 ms  (sum = -59256)
+Duration: 168 ms  (sum = -59256)
 Vector std::for_each(): 
-Duration: 170 ms  (sum = -59256)
+Duration: 179 ms  (sum = -59256)
 BCC64 with -O3 -march=haswell
 	testiteration_bcc_O3_haswell.exe
 Vector index: 
-Duration: 155 ms  (sum = -59256)
+Duration: 156 ms  (sum = -59256)
 Vector at: 
 Duration: 156 ms  (sum = -59256)
 Vector iterator: 
-Duration: 156 ms  (sum = -59256)
+Duration: 158 ms  (sum = -59256)
 Vector range for loop: 
-Duration: 168 ms  (sum = -59256)
+Duration: 161 ms  (sum = -59256)
 Array index: 
-Duration: 157 ms  (sum = -59256)
+Duration: 162 ms  (sum = -59256)
 Array pointer: 
-Duration: 160 ms  (sum = -59256)
+Duration: 164 ms  (sum = -59256)
 Vector std::accumulate(): 
-Duration: 154 ms  (sum = -59256)
-Vector std::for_each(): 
 Duration: 157 ms  (sum = -59256)
+Vector std::for_each(): 
+Duration: 158 ms  (sum = -59256)
